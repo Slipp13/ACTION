@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
-  root 'main#index'
+  resources :visitor
+  root 'visitors#index'
+
+  get "/visitors/info(.:format)", to: "visitors#info", as: "info"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

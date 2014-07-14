@@ -1,0 +1,31 @@
+<html>
+
+<head>
+	<%= stylesheet_link_tag "application" %>
+	<%= javascript_include_tag "application" %>
+</head>
+
+<body>
+
+	<div id="top_box">
+		<td>
+			<%= image_tag("logo.jpg", class: 'logo') %>
+		</td>
+	</div>
+
+	<div id="pad">
+		<ul id="nav_bar">
+			<%= link_to "<span>Home</span>".html_safe, info_path, id: "home", class: "button", remote: true %>
+			<%= link_to "<span>About Us</span>".html_safe, info_path, id: "about", class: "button", remote: true %>
+			<%= link_to "<span>Events</span>".html_safe, info_path, id: "events", class: "button", remote: true %>
+			<%= link_to "<span>Contact Us</span>".html_safe, info_path, id: "contact", class: "button", remote: true %>
+			<%= link_to "<span>Join our E-mail List</span>".html_safe, info_path, id: "email", class: "button", remote: true %>
+  
+		</ul>
+	</div>
+
+	<div id="info_box">
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+
+html,body {
+	background-color: #818181;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#top_box {
+	position: relative;
+	background-color: #ffffff;
+	height: 38%;
+	width: 98%;
+	left: 1%;
+	top: 2%;
+	border-radius: 6px;
+	padding: 0;
+	margin: 0;
+}
+
+.logo {
+	position: relative;
+	height: 50%;
+	width: 35%;
+	top: 15%;
+	right: -32.5%;
+}
+
+#pad {
+	height: 100%;
+	width: 100%;
+	padding: 0 3% 0 3%;
+}
+
+#nav_bar {
+	position: absolute;
+	display: block;
+    background: #b61616;
+    background-image: -webkit-linear-gradient(top, #b61616, #e62e2e);
+    background-image: -moz-linear-gradient(top, #b61616, #e62e2e);
+    background-image: -ms-linear-gradient(top, #b61616, #e62e2e);
+    background-image: -o-linear-gradient(top, #b61616, #e62e2e);
+    background-image: linear-gradient(to bottom, #b61616, #e62e2e);
+    border-radius: 6px;
+    width: 94%;
+    padding: 0;
+    margin: 0;
+    height: 5%;
+    right: 3%;
+    top: 37.5%;
+    box-shadow: 3px 3px 1px #000000;
+}
+
+.button {
+	cursor: pointer;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 12%;
+    right: -20%;
+    padding: 0;
+    margin: 0;
+}
+
+.button:hover, .selected:hover {
+	background: #e62e2e;
+    background-image: -webkit-linear-gradient(top, #e62e2e, #b61616);
+    background-image: -moz-linear-gradient(top, #e62e2e, #b61616);
+    background-image: -ms-linear-gradient(top, #e62e2e, #b61616);
+    background-image: -o-linear-gradient(top, #e62e2e, #b61616);
+    background-image: linear-gradient(to bottom, #e62e2e, #b61616);
+    text-decoration: none;
+    box-shadow: 2px 2px 1px #000000;
+
+}
+
+.selected {
+	cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 12%;
+    height: 100%;
+    right: -20%;
+    padding: 0;
+    margin: 0;
+	background: #e62e2e;
+    background-image: -webkit-linear-gradient(top, #DB4D4D, #E99494);
+    background-image: -moz-linear-gradient(top, #DB4D4D, #E99494);
+    background-image: -ms-linear-gradient(top, #DB4D4D, #E99494);
+    background-image: -o-linear-gradient(top, #DB4D4D, #E99494);
+    background-image: linear-gradient(to bottom, #DB4D4D, #E99494);
+}
+
+span {
+	cursor: pointer;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    height: 12px;
+    width:100%;
+    margin-top: -8px;
+    font: bold 15px Arial,sans-serif;
+    color: #EBEBEB;
+}
+
+#info_box {
+	position: absolute;
+	background-color: #bbbbbb;
+	height: 53.5%;
+	width: 96%;
+	top: 44%;
+	left: 2%;
+	border-radius: 6px;
+	box-shadow: 3px 3px 1px #000000;
+	padding-left: 5%;
+}
+
+
+	
+
+
