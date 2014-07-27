@@ -1,9 +1,8 @@
 class VisitorsController < ApplicationController
 
 	def index
-	end
+		@member = Member.new
 
-	def info
 		respond_to do |format|
 			format.html
 			format.js

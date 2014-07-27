@@ -1,30 +1,60 @@
 <html>
 
 <head>
+
 	<%= stylesheet_link_tag "application" %>
 	<%= javascript_include_tag "application" %>
+
 </head>
 
 <body>
+
+	<div id="top_bar">
+		<ul id="social_links">
+			<li class="social_link"><%= link_to image_tag("facebook.jpg"), "http://www.facebook.com", title: "ACTION Facebook" %></li>
+			<li class="social_link"><%= link_to image_tag("twitter.jpg"), "http://www.twitter.com", title: "ACTION Twitter" %></li>
+			<li class="social_link"><%= link_to image_tag("instagram.jpg"), "http://www.instagram.com", title: "ACTION Instagram" %></li>
+		</ul>
+	</div>
 
 	<div id="top_box">
 		<td>
 			<%= image_tag("logo.jpg", class: 'logo') %>
 		</td>
+
+		<div>
+		</div>
 	</div>
 
 	<div id="pad">
 		<ul id="nav_bar">
-			<%= link_to "<span>Home</span>".html_safe, info_path, id: "home", class: "button", remote: true %>
-			<%= link_to "<span>About Us</span>".html_safe, info_path, id: "about", class: "button", remote: true %>
-			<%= link_to "<span>Events</span>".html_safe, info_path, id: "events", class: "button", remote: true %>
-			<%= link_to "<span>Contact Us</span>".html_safe, info_path, id: "contact", class: "button", remote: true %>
-			<%= link_to "<span>Join our E-mail List</span>".html_safe, info_path, id: "email", class: "button", remote: true %>
-  
+			<!-- This is necessary because inline-block is whitespace dependent -->
+			<%= link_to "<span>Home</span>".html_safe, root_path, id: "home", class: "button", remote: true %><%= link_to "<span>About Us</span>".html_safe, root_path, id: "about", class: "button", remote: true %><%= link_to "<span>Events</span>".html_safe, root_path, id: "events", class: "button", remote: true %><%= link_to "<span>Contact Us</span>".html_safe, root_path, id: "contact", class: "button", remote: true %><%= link_to "<span>E-mail List</span>".html_safe, root_path, id: "email", class: "button", remote: true %>
 		</ul>
 	</div>
 
 	<div id="info_box">
+		<div class="selected-i">
+			<%= render 'home' %>
+		</div>
+		<div id="home-i" class="hidden">
+			<%= render 'home' %>
+		</div>
+		<div id="about-i" class="hidden">
+			<%= render 'about' %>
+		</div>
+		<div id="events-i" class="hidden">
+		<%= render 'events' %>
+		</div>
+		<div id="contact-i" class="hidden">
+			<%= render 'contact' %>
+		</div>
+		<div id="email-i" class="hidden">
+			<%= render "members/form" %>
+		</div>
+		<div id="thanks" class="hidden">
+			<h1>Thanks!</h1>
+		</div>
 	</div>
 
 </body>

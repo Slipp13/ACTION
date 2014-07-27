@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :members
+
   resources :visitor
   root 'visitors#index'
+ 
 
-  get "/visitors/info(.:format)", to: "visitors#info", as: "info"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
